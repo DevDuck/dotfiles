@@ -1,0 +1,15 @@
+[user]
+	name = Rich
+	email = Rich@Mobilligy.com
+
+
+[diff]
+	tool = windiff
+
+[difftool "windiff"]
+	cmd = 'c:/src/main/External/windiff/windiff.exe' "$LOCAL" "$REMOTE"
+
+[alias]
+    compare = difftool --dir-diff --symlinks HEAD
+
+
